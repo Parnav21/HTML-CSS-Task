@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .b{
+        height: 100px;
+        width: 200px;
+        border: 2px solid black;
+    }
+    .main{
+        padding: 160px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        row-gap: 5px;
+        column-gap: 5px;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+
+    .b:nth-child(1){
+        grid-row-start: 1;
+        grid-row-end: 4;
+        height: 310px;
+        background-color: green;
+    }
+    .b:nth-child(2){
+        grid-column-start: 2;
+        grid-column-end: 4;
+        width: 410px;
+        background-color: green;
+    }
+    .b:nth-child(3){
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 200px;
+        background-color: orange;
+    }
+    .b:nth-child(4){
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width:200px;
+        background-color: red;
+    }
+    .b:nth-child(5){
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 200px;
+        height: 93.5px;
+        background-color: red;
+    }
+    .b:nth-child(6){
+        grid-row-start: 3;
+        grid-row-end: 4;
+        width: 200px;
+        height: 93.5px;
+        background-color: orange;
+
+    }
+    .b:nth-child(7){
+        grid-row-start: 2;
+        grid-row-end: 4;
+        height: 200px;
+        background-color: green;
+    }
+    .b:nth-child(8){
+        background-color: red;
+        width: 200px;
+    }
+</style>
+<body>
+
+    <div class="main">
+        <div class="b">Box1</div>
+        <div class="b">Box2</div>
+        <div class="b">Box3</div>
+        <div class="b">Box4</div>
+        <div class="b">Box5</div>
+        <div class="b">Box6</div>
+        <div class="b">Box7</div>
+        <div class="b">Box8</div>
+    </div>
+
+</body>
+</html>
